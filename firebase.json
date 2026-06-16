@@ -1,0 +1,43 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "emergency-tracking-syste-95d0c",
+          "appId": "1:332369121877:android:f1cce72b3e92927b777adc",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "firetruck-app",
+          "appId": "1:607273685351:ios:6250e7d1f7f00cb4fa5fc2",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "firetruck-app",
+          "appId": "1:607273685351:ios:d479f233c1ada04ffa5fc2",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "emergency-tracking-syste-95d0c",
+          "configurations": {
+            "android": "1:332369121877:android:f1cce72b3e92927b777adc",
+            "ios": "1:332369121877:ios:6fc8fbd7466ed771777adc",
+            "macos": "1:332369121877:ios:6fc8fbd7466ed771777adc",
+            "web": "1:332369121877:web:7dc18aef9f5bd123777adc"
+          }
+        }
+      }
+    }
+  }
+}

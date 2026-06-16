@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "332369121877",
+    "firebase_url": "https://emergency-tracking-syste-95d0c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "emergency-tracking-syste-95d0c",
+    "storage_bucket": "emergency-tracking-syste-95d0c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332369121877:android:f1cce72b3e92927b777adc",
+        "android_client_info": {
+          "package_name": "com.emergency.firetruck"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCefbqn4ssQtIQlk11eh9yQuiMeD4SrBiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332369121877:android:0d2eb2c6ed2bfe4d777adc",
+        "android_client_info": {
+          "package_name": "com.example.temp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCefbqn4ssQtIQlk11eh9yQuiMeD4SrBiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

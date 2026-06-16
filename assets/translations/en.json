@@ -1,0 +1,19 @@
+{
+  "app_name": "Flutter Production Boilerplate",
+
+  "home": "Home",
+  "info": "Info",
+  "intro": "Welcome to HFRS App",
+  "more": "Learn More",
+  "bottom_nav_first": "Home",
+  "bottom_nav_second": "Info",
+  "toggle_language": "Change Language",
+  "toggle_theme": "Change Theme",
+  "theme_mode": "Theme Mode",
+  "theme_mode_light": "Light",
+  "theme_mode_dark": "Dark",
+  "theme_mode_system": "System",
+  "destination_arrived_title": "Destination reached",
+  "destination_arrived_message": "You are on scene. Coordinate with your team and stay safe.",
+  "destination_arrived_ok": "OK"
+}

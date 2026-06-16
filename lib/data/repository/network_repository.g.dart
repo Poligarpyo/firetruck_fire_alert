@@ -1,0 +1,76 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'network_repository.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+/// A repository class that extends _$NetworkRepository to handle network-related operations.
+/// This class serves as an abstraction layer for managing network requests and responses,
+/// providing a clean interface for the rest of the application to interact with network data.
+
+@ProviderFor(NetworkRepository)
+const networkRepositoryProvider = NetworkRepositoryProvider._();
+
+/// A repository class that extends _$NetworkRepository to handle network-related operations.
+/// This class serves as an abstraction layer for managing network requests and responses,
+/// providing a clean interface for the rest of the application to interact with network data.
+final class NetworkRepositoryProvider
+    extends $NotifierProvider<NetworkRepository, Dio> {
+  /// A repository class that extends _$NetworkRepository to handle network-related operations.
+  /// This class serves as an abstraction layer for managing network requests and responses,
+  /// providing a clean interface for the rest of the application to interact with network data.
+  const NetworkRepositoryProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'networkRepositoryProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$networkRepositoryHash();
+
+  @$internal
+  @override
+  NetworkRepository create() => NetworkRepository();
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(Dio value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<Dio>(value),
+    );
+  }
+}
+
+String _$networkRepositoryHash() => r'df15327c4941b859d7d4235a2cc94301364e971e';
+
+/// A repository class that extends _$NetworkRepository to handle network-related operations.
+/// This class serves as an abstraction layer for managing network requests and responses,
+/// providing a clean interface for the rest of the application to interact with network data.
+
+abstract class _$NetworkRepository extends $Notifier<Dio> {
+  Dio build();
+  @$mustCallSuper
+  @override
+  void runBuild() {
+    final created = build();
+    final ref = this.ref as $Ref<Dio, Dio>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<Dio, Dio>,
+              Dio,
+              Object?,
+              Object?
+            >;
+    element.handleValue(ref, created);
+  }
+}

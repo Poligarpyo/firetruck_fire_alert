@@ -1,0 +1,57 @@
+{
+  "rules": {
+    "//": "DEV RULES — open read/write because this app does NOT use Firebase Auth (it uses a custom token stored in Hive). The structure of every write is still validated below, so bad payloads are rejected. BEFORE PRODUCTION: integrate Firebase Anonymous Auth (or custom-token auth) and tighten `.read` / `.write` to require `auth != null` and `auth.uid === data.child('driverId').val()`.",
+
+    "firetrucks": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["status"],
+
+      "$truckId": {
+        "driverId": {
+          ".validate": "newData.isString()"
+        },
+
+        "status": {
+          ".validate": "newData.isString() && newData.val().matches(/^(offline|available|dispatched|enroute|onsite|on-scene)$/)"
+        },
+
+        "lastSeen": {
+          ".validate": "newData.isNumber()"
+        },
+
+        "location": {
+          ".validate": "newData.hasChildren(['lat', 'lng', 'updatedAt'])",
+
+          "lat": {
+            ".validate": "newData.isNumber() && newData.val() >= -90 && newData.val() <= 90"
+          },
+          "lng": {
+            ".validate": "newData.isNumber() && newData.val() >= -180 && newData.val() <= 180"
+          },
+          "heading": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 360"
+          },
+          "speed": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 200"
+          },
+          "accuracy": {
+            ".validate": "newData.isNumber() && newData.val() >= 0"
+          },
+          "updatedAt": {
+            ".validate": "newData.isNumber()"
+          },
+
+          "$other": { ".validate": false }
+        },
+
+        "$other": { ".validate": false }
+      }
+    },
+
+    "$other": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}

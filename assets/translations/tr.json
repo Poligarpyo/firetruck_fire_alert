@@ -1,0 +1,19 @@
+{
+  "app_name": "Flutter Production Boilerplate",
+
+  "home": "Ana Sayfa",
+  "info": "Hakkında",
+  "intro": "Welcome to HFRS App",
+  "more": "Daha Fazla",
+  "bottom_nav_first": "Ana Sayfa",
+  "bottom_nav_second": "Ayarlar",
+  "toggle_language": "Dili Değiştir",
+  "toggle_theme": "Temayı Değiştir",
+  "theme_mode": "Tema Modu",
+  "theme_mode_dark": "Karanlık",
+  "theme_mode_light": "Aydınlık",
+  "theme_mode_system": "Sistem",
+  "destination_arrived_title": "Hedefe ulaşıldı",
+  "destination_arrived_message": "Olay yerindesiniz. Ekibinizle koordine olun ve güvende kalın.",
+  "destination_arrived_ok": "Tamam"
+}
